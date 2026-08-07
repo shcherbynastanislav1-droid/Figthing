@@ -1,0 +1,16 @@
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\bin\Debug\net10.0-windows\OOP_Fight_GUI.exe
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\bin\Debug\net10.0-windows\OOP_Fight_GUI.deps.json
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\bin\Debug\net10.0-windows\OOP_Fight_GUI.runtimeconfig.json
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\bin\Debug\net10.0-windows\OOP_Fight_GUI.dll
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\bin\Debug\net10.0-windows\OOP_Fight_GUI.pdb
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\OOP_Fight_GUI.Form1.resources
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\OOP_Fight_GUI.csproj.GenerateResource.cache
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\OOP_Fight_GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\OOP_Fight_GUI.AssemblyInfoInputs.cache
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\OOP_Fight_GUI.AssemblyInfo.cs
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\OOP_Fight_GUI.csproj.CoreCompileInputs.cache
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\OOP_Fight_GUI.dll
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\refint\OOP_Fight_GUI.dll
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\OOP_Fight_GUI.pdb
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\OOP_Fight_GUI.genruntimeconfig.cache
+C:\Users\mamam\OneDrive\Bureau\Дз\OOP_Fight_GUI\OOP_Fight_GUI\obj\Debug\net10.0-windows\ref\OOP_Fight_GUI.dll
