@@ -9,14 +9,15 @@ namespace OOP_Fight_GUI
         Player player;
         Mob mob;
         SaveManager saveManager = new SaveManager();
+        SaveManager loadDate = saveManager.Load();
         MobSelect mobs = new MobSelect();
 
         Battle battle;
         public Form1()
         {
             InitializeComponent();
-            player = saveManager.Load();
-            mob = mobs.Add();
+            player = loadDate.Player;
+            mob = loadDate.Mob;
             battle = new Battle(player, mob);
             label_Name_Player.Text = player.Name;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -85,7 +86,7 @@ namespace OOP_Fight_GUI
         }
         private void Save_Button_Click(object sender, EventArgs e)
         {
-            string saveMassage = saveManager.Save(player);
+            string saveMassage = saveManager.Save(player, mob);
             AddLog(saveMassage);
         }
 
@@ -103,6 +104,7 @@ namespace OOP_Fight_GUI
                 
                 player = saveManager.NewGame();
                 mob = mobs.Add();
+                saveManager.Save(player,mob);
                 battle = new Battle(player, mob);
                 Attack_Button.Enabled = true;
                 Save_Button.Enabled = true;

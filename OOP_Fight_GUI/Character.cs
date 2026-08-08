@@ -9,7 +9,10 @@ public abstract class Character
     protected int healthMax;
     protected int attackMin;
     protected int attackMax;
-    protected const int dodgeChance = 15;
+    private int critChance;
+    private int critDamage;
+    private int vampire;
+    protected int dodgeChance = 1;
     
     protected Character(string name, int healthMax, int attackMax)
     {
@@ -21,25 +24,57 @@ public abstract class Character
     }
     protected Character() {
         this.name = "Deda";
-        this.healthMax = 10;
-        this.attackMax = 5;
+        this.healthMax = 15;
+        this.attackMax = 2;
         this.health = this.healthMax;
         this.attackMin = this.attackMax / 2;
     }
    
     public virtual string Attack(Character target)
     {
-        int takingDamage = random.Next(this.attackMin, this.attackMax + 1);
+        int plusDamage = 1;
+        if (critDamage != 0 && critChance != 0 && random.Next(1, 101) <= critChance)
+        {
+            plusDamage = critDamage;
+        } 
+        int takingDamage = random.Next(this.attackMin, this.attackMax + 1) * plusDamage;
+
         if (random.Next(1, 101) <= dodgeChance)
         {
             return $"{target.name} dodge";
         }
         else
         {
-            target.Health = target.Health - takingDamage;
+            target.Health -= takingDamage;
+
+            if (vampire != 0)
+                this.Health += vampire;
+            
 
             return $"{target.name} taking {takingDamage} damage";
             
+        }
+    }
+    public int CritChance
+    {
+        get
+        {
+            return this.critChance;
+        }
+        set
+        {
+            this.critChance = value;
+        }
+    }
+    public int CritDamage
+    {
+        get
+        {
+            return this.critDamage;
+        }
+        set
+        {
+            this.critDamage = value;
         }
     }
     public virtual bool isDead
@@ -104,4 +139,5 @@ public abstract class Character
             this.attackMin = value;
         }
     }
+    
 }

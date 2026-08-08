@@ -8,6 +8,7 @@ public class Player : Character
     private int maxExp;
     private int kills;
     private int death;
+    
     public Player(string name, int healthMax, int attackMax, int lvl, int exp) : base(name, healthMax, attackMax)
     {
         this.lvl = lvl;
@@ -94,8 +95,4 @@ public class Player : Character
             this.death = value;
         }
     }
-    //public override string Attack(Character target)
-    //{
-
-    //}
 }

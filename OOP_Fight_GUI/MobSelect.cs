@@ -2,16 +2,29 @@
 namespace OOP_Fight_GUI;
 public class MobSelect
 {
-    List<Mob> enemys = new List<Mob>();
+    List<Mob> locatio1 = new List<Mob>();
+    List<Mob> bosses = new List<Mob>();
     Random random = new Random();
     public Mob Add()
     {
-        enemys.Add(new Mob("Zombie", 6, 2, 4));
-        enemys.Add(new Mob("Slime", 2, 1, 1));
-        enemys.Add(new Mob("Skeleton", 4, 3, 3));
-        enemys.Add(new Mob("Boss", 20, 4, 10));
-        enemys.Add(new Mob("Pig", 3, 1, 2));
+        locatio1.Add(new Mob("Pig", 8, 3, 2));
+        locatio1.Add(new Mob("Slime", 6, 2, 1));
+        locatio1.Add(new Mob("Goblin", 7, 2, 2));
+        locatio1[2].CritChance = 20;
+        locatio1[2].CritDamage = 2;
 
-        return enemys[random.Next(enemys.Count)].Clone();
+        Mob goldVersion = locatio1[random.Next(locatio1.Count)].Clone();
+        goldVersion.Name += " G";
+        goldVersion.HealthMax *= 2;
+        goldVersion.dropExp *= 3;
+        if (random.Next(1,101) <= 10) {
+            return goldVersion.Clone();
+        }
+        return locatio1[random.Next(locatio1.Count)].Clone();
+    }
+    public Mob Boss(int idBoss)
+    {
+        bosses.Add(new Mob("Boss Pig", 20, 4, 7));
+        return bosses[idBoss];
     }
 }

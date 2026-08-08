@@ -2,26 +2,31 @@
 using System.Text.Json;
 namespace OOP_Fight_GUI;
 
-class SaveManager
+public class SaveManager
 {
-    public string Save(Player player)
+    public Player Player { get; set; }
+    public Mob Mob { get; set; }
+    
+    public string Save(Player player, Mob mob)
     {
-        string json = JsonSerializer.Serialize(player);
-
+        SaveManager saveDate = new SaveManager
+        {
+            Player = player,
+            Mob = mob
+        };
+        string json = JsonSerializer.Serialize(saveDate);
         File.WriteAllText("save.json", json);
         return "You save your character";
     }
-    public Player Load()
+    public SaveManager Load()
     {
         string jsonFromFile = File.ReadAllText("save.json");
 
-        Player loadedPlayer = JsonSerializer.Deserialize<Player>(jsonFromFile);
-
-        return loadedPlayer;
+        return JsonSerializer.Deserialize<SaveManager>(jsonFromFile);
     }
     public Player NewGame()
     {
-        Player defaultPlayer = new Player();
-        return defaultPlayer;
+        // Player defaultPlayer = new Player();
+        return new Player();
     }
 }
