@@ -5,7 +5,7 @@ public class Mob : Character
 {
     private int dropExp;
     static int kills = 0;
-    public Mob(string name, int healthMax, int attackMax, int dropExp) : base(name, healthMax, attackMax)
+    public Mob(string name, int healthMax, int armor,int attackMax, int dropExp) : base(name, healthMax, armor, attackMax)
     {
         this.dropExp = dropExp;
 

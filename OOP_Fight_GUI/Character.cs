@@ -7,18 +7,20 @@ public abstract class Character
     protected string name;
     protected int health;
     protected int healthMax;
+    protected int armor;
     protected int attackMin;
     protected int attackMax;
-    private int critChance;
-    private int critDamage;
-    private int vampire;
+    protected int critChance;
+    protected int critDamage;
+    protected int vampire;
     protected int dodgeChance = 1;
     
-    protected Character(string name, int healthMax, int attackMax)
+    protected Character(string name, int healthMax, int armor, int attackMax)
     {
         this.name = name;
         this.health = healthMax;
         this.healthMax = healthMax;
+        this.armor = armor;
         this.attackMax = attackMax;
         this.attackMin = attackMax / 2;
     }
@@ -26,6 +28,7 @@ public abstract class Character
         this.name = "Deda";
         this.healthMax = 15;
         this.attackMax = 2;
+        this.armor = 0;
         this.health = this.healthMax;
         this.attackMin = this.attackMax / 2;
     }
@@ -37,8 +40,8 @@ public abstract class Character
         {
             plusDamage = critDamage;
         } 
-        int takingDamage = random.Next(this.attackMin, this.attackMax + 1) * plusDamage;
-
+        double takingDamage = random.Next(this.attackMin, this.attackMax + 1) * plusDamage * (100/(100+armor));
+        int finalDamage = (int)Math.Floor(takingDamage);
         if (random.Next(1, 101) <= dodgeChance)
         {
             return $"{target.name} dodge";
@@ -55,6 +58,18 @@ public abstract class Character
             
         }
     }
+     public int Armor
+    {
+        get
+        {
+            return this.armor;
+        }
+        set
+        {
+            this.armor = value;
+        }
+    }
+
     public int CritChance
     {
         get

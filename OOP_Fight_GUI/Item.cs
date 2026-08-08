@@ -7,6 +7,11 @@ public class Item
     private string description;
     public Action<Player> Stat {get; set;}
     private bool isEquip = false;
+    public Item(string name, string description)
+    {
+        this.name = name;
+        this.description = description;
+    }
     public bool IsEquip
     {
         get
@@ -40,15 +45,6 @@ public class Item
             this.description = value;
         }
     }
-    public Item(string name, string description)
-    {
-        this.name = name;
-        this.description = description;
-    }
-    public Item Items()
-    {
-        Item baseKnife = new Item("Knife","HP-43, +2 max attack");
-        baseKnife.Stat = p => p.AttackMax += 2;
-        return baseKnife;
-    }
+    
+    
 }

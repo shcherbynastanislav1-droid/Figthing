@@ -9,7 +9,7 @@ public class Player : Character
     private int kills;
     private int death;
     
-    public Player(string name, int healthMax, int attackMax, int lvl, int exp) : base(name, healthMax, attackMax)
+    public Player(string name, int healthMax, int armor, int attackMax, int lvl, int exp) : base(name, healthMax, armor, attackMax)
     {
         this.lvl = lvl;
         this.currentExp = exp;
