@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 namespace OOP_Fight_GUI;
 
 public class Player : Character
@@ -8,6 +8,9 @@ public class Player : Character
     private int maxExp;
     private int kills;
     private int death;
+    
+    public Inventory inventory = new Inventory();
+     
     
     public Player(string name, int healthMax, int armor, int attackMax, int lvl, int exp) : base(name, healthMax, armor, attackMax)
     {

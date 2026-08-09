@@ -1,6 +1,15 @@
 namespace OOP_Fight_GUI;
 public class ItemList {
     List<Item> itemsList = new List<Item>();
+    Random random = new Random();
+    private int ChanceDrop = 50;
+    public Item Drop()
+    {
+        if(random.Next(1,101) >= ChanceDrop)
+        {
+            return itemsList[random.Next(itemsList.Count)];
+        }
+    }
     public Item Items(int idItem)
     {
         Item baseKnife = new Item("Knife","HP-43, +2 max attack");
@@ -15,7 +24,7 @@ public class ItemList {
         gun.Stat = p => p.AttackMax += 4;
         itemsList.Add(gun);
 
-        Item awp = new Item("Awp", "..., +100 max attack");
+        Item awp = new Item("Awp", "Imba, +100 max attack");
         awp.Stat = p => p.AttackMax += 4;
         itemsList.Add(awp);
         

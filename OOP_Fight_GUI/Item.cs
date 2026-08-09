@@ -5,12 +5,26 @@ public class Item
 {
     private string name;
     private string description;
+    private string emoji;
     public Action<Player> Stat {get; set;}
     private bool isEquip = false;
-    public Item(string name, string description)
+    public Item(string name, string description, string emoji)
     {
+        this.emoji = emoji;
         this.name = name;
         this.description = description;
+    }
+    public string Emoji
+    
+    {
+        get
+        {
+            return this.emoji;
+        }
+        set
+        {
+            this.emoji = value;
+        }
     }
     public bool IsEquip
     {
