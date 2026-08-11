@@ -27,7 +27,7 @@ public abstract class Character
     protected Character() {
         this.name = "Deda";
         this.healthMax = 15;
-        this.attackMax = 2;
+        this.attackMax = 6;
         this.armor = 0;
         this.health = this.healthMax;
         this.attackMin = this.attackMax / 2;
@@ -36,25 +36,25 @@ public abstract class Character
     public virtual string Attack(Character target)
     {
         int plusDamage = 1;
-        if (critDamage != 0 && critChance != 0 && random.Next(1, 101) <= critChance)
+        if (this.critDamage != 0 && this.critChance != 0 && random.Next(1, 101) <= this.critChance)
         {
             plusDamage = critDamage;
         } 
-        double takingDamage = random.Next(this.attackMin, this.attackMax + 1) * plusDamage * (100/(100+armor));
-        int finalDamage = (int)Math.Floor(takingDamage);
-        if (random.Next(1, 101) <= dodgeChance)
+        double takingDamage = random.Next(this.attackMin, this.attackMax + 1) * plusDamage * (100.0/(100 + target.armor));
+        int finalDamage = (int)Math.Ceiling(takingDamage);
+        if (random.Next(1, 101) <= target.dodgeChance)
         {
             return $"{target.name} dodge";
         }
         else
         {
-            target.Health -= takingDamage;
+            target.Health -= finalDamage;
 
             if (vampire != 0)
                 this.Health += vampire;
             
 
-            return $"{target.name} taking {takingDamage} damage";
+            return $"{target.name} taking {finalDamage} damage";
             
         }
     }
@@ -96,7 +96,7 @@ public abstract class Character
     {
         get
         {
-            return health <= 0;
+            return this.health <= 0;
         }
     }
     public int Health
@@ -107,8 +107,9 @@ public abstract class Character
         }
         set
         {
-            if (value < 0) health = 0;
-            else health = value;
+            if (value < 0) this.health = 0;
+            else if (value > this.HealthMax) this.health = this.healthMax;
+            else this.health = value;
         }
     }
     public int AttackMax
@@ -131,6 +132,17 @@ public abstract class Character
         set
         {
             this.healthMax = value;
+        }
+    }
+    public int Vampire
+    {
+        get
+        {
+            return this.vampire;
+        }
+        set
+        {
+            this.vampire = value;
         }
     }
     public string Name

@@ -1,1 +1,1 @@
-{"Lvl":4,"CurrentExp":2,"MaxExp":16,"Kills":11,"Death":0,"isDead":false,"Health":13,"AttackMax":8,"HealthMax":13,"Name":"Deda","AttackMin":4}
+{"Player":{"SkillPoints":8,"Lvl":9,"CurrentExp":3,"MaxExp":37,"Kills":71,"Death":0,"Armor":0,"CritChance":0,"CritDamage":0,"isDead":false,"Health":26,"AttackMax":14,"HealthMax":26,"Vampire":0,"Name":"Deda","AttackMin":7},"Mob":{"DropExp":1,"Armor":0,"CritChance":0,"CritDamage":0,"isDead":false,"Health":6,"AttackMax":2,"HealthMax":6,"Vampire":0,"Name":"Slime","AttackMin":1}}

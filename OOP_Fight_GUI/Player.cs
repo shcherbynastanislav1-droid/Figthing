@@ -6,15 +6,17 @@ public class Player : Character
     private int lvl;
     private int currentExp;
     private int maxExp;
+    private int skillPoints;
     private int kills;
     private int death;
     
-    public Inventory inventory = new Inventory();
+    //public Inventory inventory = new Inventory();
      
     
     public Player(string name, int healthMax, int armor, int attackMax, int lvl, int exp) : base(name, healthMax, armor, attackMax)
     {
         this.lvl = lvl;
+        this.skillPoints = lvl - 1;
         this.currentExp = exp;
         this.maxExp = 10;
         this.kills = 0;
@@ -23,10 +25,22 @@ public class Player : Character
     public Player() : base()
     {
         this.lvl = 1;
+        this.skillPoints = 0;
         this.currentExp = 0;
         this.maxExp = 10;
         this.kills = 0;
         this.death = 0;
+    }
+    public int SkillPoints
+    {
+        get
+        {
+            return this.skillPoints;
+        }
+        set
+        {
+            this.skillPoints = value;
+        }
     }
     public int Lvl
     {
@@ -74,6 +88,7 @@ public class Player : Character
             base.AttackMax++;
             base.AttackMin = attackMax / 2;
             this.lvl++;
+            this.skillPoints++;
         }
     }
     public int Kills

@@ -3,15 +3,17 @@ namespace OOP_Fight_GUI;
 public class Inventory
 {
     public Item ArmorSlot {get;set;}
-    public Item Weapon {get;set;}
-    public Item Amulet {get;set;}
-    List<Item> backpak = new List<Item>();
-    public void Delete(Item item)
+    public Item WeaponSlot { get;set;}
+    public Item UnderpantsSlot { get;set;}
+    public InventorySlot[] Slots { get; set; }
+    public Inventory(int size)
     {
-        backpak.Remove(item);
+
     }
-    public void Add(Item item)
-    {
-        backpak.Add(item);
-    }
+}
+public class InventorySlot
+{
+    public Item Item { get; set; }
+    public int Amount { get; set; }
+    public bool IsEmpty => Item == null;
 }

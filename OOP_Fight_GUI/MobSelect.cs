@@ -10,13 +10,11 @@ public class MobSelect
         locatio1.Add(new Mob("Pig", 8, 0, 3, 2));
         locatio1.Add(new Mob("Slime", 6, 0, 2, 1));
         locatio1.Add(new Mob("Goblin", 7, 1, 2, 2));
-        locatio1[2].CritChance = 20;
-        locatio1[2].CritDamage = 2;
 
         Mob goldVersion = locatio1[random.Next(locatio1.Count)].Clone();
         goldVersion.Name += " G";
         goldVersion.HealthMax *= 2;
-        goldVersion.dropExp *= 3;
+        goldVersion.DropExp *= 4;
         if (random.Next(1,101) <= 10) {
             return goldVersion.Clone();
         }

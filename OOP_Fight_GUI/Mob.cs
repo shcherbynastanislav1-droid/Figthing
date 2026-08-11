@@ -16,11 +16,16 @@ public class Mob : Character
         {
             return this.dropExp;
         }
+        set
+        {
+            this.dropExp = value;
+        }
     }
 
     public Mob Clone()
     {
-        return new Mob(name, healthMax, attackMax, dropExp);
+        Mob mobClone = new Mob(name, healthMax, armor, attackMax, dropExp);
+        return mobClone;
     }
    
 }
