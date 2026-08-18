@@ -1,7 +1,8 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Collections.Generic;
+
 namespace OOP_Fight_GUI
 {
     public partial class Form1 : Form
@@ -9,10 +10,12 @@ namespace OOP_Fight_GUI
         Player player;
         Mob mob;
         SaveManager saveManager = new SaveManager();
-        SkillList skillList;
+        SkillList skillList = new SkillList();
+        ItemList itemList = new ItemList();
         MobSelect mobs = new MobSelect();
-        Panel[] inventoryPanels;
         Button[] skillButtons;
+        Label[] inventoryLabels;
+        Label[] inventoryAmounts;
         Battle battle;
         public Form1()
         {
@@ -20,7 +23,7 @@ namespace OOP_Fight_GUI
 
             SaveManager loadDate = saveManager.Load();
             player = loadDate.Player;
-            skillList = new SkillList(player);
+
             //player = new Player();
             mob = loadDate.Mob;
             //mob = mobs.Add();
@@ -35,18 +38,30 @@ namespace OOP_Fight_GUI
                 Health_I,
                 Vampire_I,
                 Crit_Chance_I,
-                Crit_Chance_II
+                Crit_Chance_II,
+                Vampire_II
 
             };
-            inventoryPanels = new Panel[]
+
+            inventoryLabels = new Label[] 
+            { 
+                Label_Slot1,
+                Label_Slot2,
+                Label_Slot3,
+                Label_Slot4,
+                Label_Slot5,
+                Label_Slot6,
+                Label_Slot7
+            };
+            inventoryAmounts = new Label[]
             {
-                Slot1,
-                Slot2,
-                Slot3,
-                Slot4,
-                Slot5,
-                Slot6,
-                Slot7
+                Label_Amount1,
+                Label_Amount2,
+                Label_Amount3,
+                Label_Amount4,
+                Label_Amount5,
+                Label_Amount6,
+                Label_Amount7
             };
             tool_Tip_AttackI.SetToolTip(
                 AttackUp_I,
@@ -86,70 +101,84 @@ namespace OOP_Fight_GUI
         }
         private void enableSkillButton(int idSkill, int idButton)
         {
-            if (player.SkillPoints >= skillList.Skills(idSkill).SkillPointCost)
+            if (!player.CheckSkill(skillList.Skills(idSkill)))
             {
-                if (!skillList.Skills(idSkill).IsLearnd)
+                if (player.SkillPoints >= skillList.Skills(idSkill).SkillPointCost)
                 {
-                    skillButtons[idButton].Enabled = true;
+                    skillButtons[idButton].Enabled = !player.CheckSkill(skillList.Skills(idSkill));
+                }
+                else
+                {
+                    skillButtons[idButton].Enabled = player.CheckSkill(skillList.Skills(idSkill));
                 }
             }
-            else if (player.SkillPoints < skillList.Skills(idSkill).SkillPointCost && !skillList.Skills(idSkill).IsLearnd)
+            else
             {
-                skillButtons[idButton].Enabled = false;
+                skillButtons[idButton].Enabled = player.CheckSkill(skillList.Skills(idSkill));
+                Select(idSkill, skillButtons[idButton]);
             }
         }
         private void UpdateSkill()
         {
-            //if (player.SkillPoints >= skillList.Skills(0).SkillPointCost)
-            //{
-            //    if (!skillList.Skills(0).IsLearnd)
-            //    {
-            //        skillButtons[0].Enabled = true;
-            //    }
-            //}
-            //else if (player.SkillPoints < skillList.Skills(0).SkillPointCost && !skillList.Skills(0).IsLearnd)
-            //{
-            //    skillButtons[0].Enabled = false;
-            //}
             enableSkillButton(0, 0);
-
-            for (int i = 1; i < skillButtons.Length - 1; i++)
+            if (!player.CheckSkill(skillList.Skills(0)))
             {
-                if (skillList.Skills(0).IsLearnd)
-                {
-                    enableSkillButton(i, i);
-                }
-                else
+                for (int i = 1; i < 5; i++)
                 {
                     skillButtons[i].Enabled = false;
                 }
-            }
-            if (skillList.Skills(4).IsLearnd)
+            } else
             {
-                enableSkillButton(5, 5);
+                for (int i = 1; i < 5; i++)
+                {
+                    enableSkillButton(i, i);
+                }
+            }
+            if (!player.CheckSkill(skillList.Skills(4)))
+            {
+                
+                skillButtons[5].Enabled = false;
+                
             }
             else
             {
-                Crit_Chance_II.Enabled = false;
+                
+                enableSkillButton(5, 5);
+                
             }
-            //if (skillList.Skills(0).IsLearnd)
-            //{
-            //    if (player.SkillPoints < skillList.Skills(0).SkillPointCost)
-            //    {
-            //        Health_I.Enabled = true;
-            //        Vampire_I.Enabled = true;
-            //        Crit_Chance_I.Enabled = true;
-            //        Armor_I.Enabled = true;
-            //    } 
+            if (!player.CheckSkill(skillList.Skills(3)))
+            {
 
-            //} else
-            //{
-            //    Health_I.Enabled = false;
-            //    Vampire_I.Enabled = false;
-            //    Crit_Chance_I.Enabled = false;
-            //    Armor_I.Enabled = false;
-            //}
+                skillButtons[6].Enabled = false;
 
+            }
+            else
+            {
+
+                enableSkillButton(6, 6);
+
+            }
+        }
+        private void InventoryUpdate()
+        {
+            
+            for (int i = 0; i < inventoryLabels.Length; i++)
+            {
+                
+                if (player.inventory.Slots[i].Item != null)
+                {
+                    inventoryLabels[i].Text = player.inventory.Slots[i].Item.Emoji;
+                    if (player.inventory.Slots[i].Amount == 1)
+                        inventoryAmounts[i].Text = "";
+                    else 
+                        inventoryAmounts[i].Text = $"{player.inventory.Slots[i].Amount}";
+
+                } else
+                {
+                    inventoryLabels[i].Text = "";
+                    inventoryAmounts[i].Text = "";
+                }
+            }
         }
         private async void Attack_Button_Click(object sender, EventArgs e)
         {
@@ -163,6 +192,7 @@ namespace OOP_Fight_GUI
             {
                 player.ExpUp(mob.DropExp);
                 player.Kills++;
+                player.inventory.Add(mob.Try(itemList));
                 mob = mobs.Add();
                 battle = new Battle(player, mob);
             }
@@ -178,7 +208,6 @@ namespace OOP_Fight_GUI
             if (player.isDead)
             {
                 console_Info.AppendText("You dead\n");
-                player.Death++;
                 Attack_Button.Enabled = false;
                 Save_Button.Enabled = false;
             }
@@ -200,17 +229,22 @@ namespace OOP_Fight_GUI
             );
             if (result == DialogResult.Yes)
             {
-
                 player = saveManager.NewGame();
                 mob = mobs.Add();
                 saveManager.Save(player, mob);
                 battle = new Battle(player, mob);
-                Attack_Button.Enabled = true;
-                Save_Button.Enabled = true;
-
+                for (int i = 0; i < skillButtons.Length; i++)
+                {
+                    skillButtons[i].ForeColor = Color.White;
+                }
                 UpdateUI();
             }
 
+        }
+        private void Select(int idSkill, Button button)
+        {
+            button.ForeColor = Color.Gold;
+            player.LearnSkill(skillList.Skills(idSkill));
         }
 
         private void Skills_Button_Click(object sender, EventArgs e)
@@ -221,50 +255,54 @@ namespace OOP_Fight_GUI
 
         private void Invetory_Button_Click(object sender, EventArgs e)
         {
+            InventoryUpdate();
             ViewButton(Invetory_Button);
-            //Inventory_Panel.Visible = !Inventory_Panel.Visible;
+            Inventory_Panel.Visible = !Inventory_Panel.Visible;
         }
-
-        private void Skill_Button_1_Click(object sender, EventArgs e)
-        {
-            skillList.Select(0, AttackUp_I);
-            UpdateUI();
-        }
-        private void Armor_I_Click(object sender, EventArgs e)
-        {
-            skillList.Select(1, Armor_I);
-            UpdateUI();
-        }
-
-        private void Health_I_Click(object sender, EventArgs e)
-        {
-            skillList.Select(2, Health_I);
-            UpdateUI();
-        }
-
-        private void Vampire_I_Click(object sender, EventArgs e)
-        {
-            skillList.Select(3, Vampire_I);
-            UpdateUI();
-        }
-
-        private void Crit_Chance_I_Click(object sender, EventArgs e)
-        {
-            skillList.Select(4, Crit_Chance_I);
-            UpdateUI();
-        }
-
-        private void Crit_Chance_II_Click(object sender, EventArgs e)
-        {
-            skillList.Select(5, Crit_Chance_II);
-            UpdateUI();
-        }
-
         private void Settings_Button_Click(object sender, EventArgs e)
         {
             Save_Button.Visible = !Save_Button.Visible;
             New_Game_Button.Visible = !New_Game_Button.Visible;
             ViewButton(Settings_Button);
+        }
+        private void Skill_Button_1_Click(object sender, EventArgs e)
+        {
+            Select(0, AttackUp_I);
+            UpdateUI();
+        }
+        private void Armor_I_Click(object sender, EventArgs e)
+        {
+            Select(1, Armor_I);
+            UpdateUI();
+        }
+
+        private void Health_I_Click(object sender, EventArgs e)
+        {
+            Select(2, Health_I);
+            UpdateUI();
+        }
+
+        private void Vampire_I_Click(object sender, EventArgs e)
+        {
+            Select(3, Vampire_I);
+            UpdateUI();
+        }
+
+        private void Crit_Chance_I_Click(object sender, EventArgs e)
+        {
+            Select(4, Crit_Chance_I);
+            UpdateUI();
+        }
+
+        private void Crit_Chance_II_Click(object sender, EventArgs e)
+        {
+            Select(5, Crit_Chance_II);
+            UpdateUI();
+        }
+        private void Vampire_II_Click(object sender, EventArgs e)
+        {
+            Select(6, Vampire_II);
+            UpdateUI();
         }
     }
 }

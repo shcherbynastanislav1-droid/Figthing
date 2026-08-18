@@ -3,19 +3,26 @@ namespace OOP_Fight_GUI;
 
 public class Item
 {
+    private int id;
     private string name;
     private string description;
     private string emoji;
     public Action<Player> Stat {get; set;}
-    private bool isEquip = false;
-    public Item(string name, string description, string emoji)
+    public Item(int id, string name, string description, string emoji)
     {
+        this.id = id;
         this.emoji = emoji;
         this.name = name;
         this.description = description;
     }
+    public int Id
+    {
+        get
+        {
+            return this.id;
+        }
+    }
     public string Emoji
-    
     {
         get
         {
@@ -24,17 +31,6 @@ public class Item
         set
         {
             this.emoji = value;
-        }
-    }
-    public bool IsEquip
-    {
-        get
-        {
-            return this.isEquip;
-        }
-        set
-        {
-            this.isEquip = value;
         }
     }
     public string Name

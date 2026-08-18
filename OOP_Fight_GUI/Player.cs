@@ -1,4 +1,6 @@
 ﻿
+using System.Numerics;
+
 namespace OOP_Fight_GUI;
 
 public class Player : Character
@@ -8,7 +10,8 @@ public class Player : Character
     private int maxExp;
     private int skillPoints;
     private int kills;
-    private int death;
+    private List<int> learnedSkills = new List<int>();
+    public Inventory inventory = new Inventory(21);
     
     //public Inventory inventory = new Inventory();
      
@@ -20,7 +23,6 @@ public class Player : Character
         this.currentExp = exp;
         this.maxExp = 10;
         this.kills = 0;
-        this.death = 0;
     }
     public Player() : base()
     {
@@ -29,7 +31,28 @@ public class Player : Character
         this.currentExp = 0;
         this.maxExp = 10;
         this.kills = 0;
-        this.death = 0;
+    }
+    public Inventory Inventory
+    {
+        get
+        {
+            return this.inventory;
+        }
+        set
+        {
+            this.inventory = value;
+        }
+    }
+    public List<int> LearnedSkills
+    {
+        get
+        {
+            return this.learnedSkills;
+        }
+        set
+        {
+            this.learnedSkills = value;
+        }
     }
     public int SkillPoints
     {
@@ -75,6 +98,17 @@ public class Player : Character
             this.maxExp = value;
         }
     }
+    public int Kills
+    {
+        get
+        {
+            return this.kills;
+        }
+        set
+        {
+            this.kills = value;
+        }
+    }
     public void ExpUp(int dropExp)
     {
         this.currentExp += dropExp;
@@ -91,26 +125,20 @@ public class Player : Character
             this.skillPoints++;
         }
     }
-    public int Kills
+    public bool LearnSkill(Skill skill)
     {
-        get
-        {
-            return this.kills;
-        }
-        set
-        {
-            this.kills = value;
-        }
+        if (CheckSkill(skill))
+            return !CheckSkill(skill);
+        if (this.SkillPoints >= skill.SkillPointCost)
+            this.SkillPoints -= skill.SkillPointCost;
+        else
+            return false;
+        learnedSkills.Add(skill.Id);
+        skill.Effect(this);
+        return true;
     }
-    public int Death
+    public bool CheckSkill(Skill skill)
     {
-        get
-        {
-            return this.death;
-        }
-        set
-        {
-            this.death = value;
-        }
+        return learnedSkills.Contains(skill.Id);
     }
 }

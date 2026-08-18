@@ -46,48 +46,56 @@
             Invetory_Button = new Button();
             tool_Tip_AttackI = new ToolTip(components);
             panel3 = new Panel();
-            panel31 = new Panel();
-            panel32 = new Panel();
-            panel17 = new Panel();
-            panel18 = new Panel();
-            panel33 = new Panel();
-            panel34 = new Panel();
-            Slot7 = new Panel();
-            panel16 = new Panel();
-            panel35 = new Panel();
-            panel36 = new Panel();
-            panel19 = new Panel();
-            panel20 = new Panel();
-            panel37 = new Panel();
-            panel38 = new Panel();
-            panel39 = new Panel();
-            panel40 = new Panel();
-            Slot6 = new Panel();
-            panel14 = new Panel();
-            panel41 = new Panel();
-            panel42 = new Panel();
-            panel21 = new Panel();
-            panel22 = new Panel();
-            panel43 = new Panel();
-            panel44 = new Panel();
-            Slot5 = new Panel();
-            panel12 = new Panel();
-            panel23 = new Panel();
-            panel24 = new Panel();
-            Slot4 = new Panel();
-            panel10 = new Panel();
-            panel25 = new Panel();
-            panel26 = new Panel();
-            Slot3 = new Panel();
-            panel8 = new Panel();
-            panel27 = new Panel();
-            panel28 = new Panel();
-            Slot2 = new Panel();
-            panel6 = new Panel();
-            panel29 = new Panel();
-            panel30 = new Panel();
+            Back_Ground_Slot1 = new Panel();
             Slot1 = new Panel();
-            panel4 = new Panel();
+            Label_Amount1 = new Label();
+            Label_Slot1 = new Label();
+            Back_Ground_Slot2 = new Panel();
+            Slot2 = new Panel();
+            Label_Slot2 = new Label();
+            Back_Ground_Slot3 = new Panel();
+            Slot3 = new Panel();
+            Label_Slot3 = new Label();
+            Back_Ground_Slot4 = new Panel();
+            Slot4 = new Panel();
+            Label_Slot4 = new Label();
+            Back_Ground_Slot5 = new Panel();
+            Slot5 = new Panel();
+            Label_Slot5 = new Label();
+            Back_Ground_Slot6 = new Panel();
+            Slot6 = new Panel();
+            Label_Slot6 = new Label();
+            Back_Ground_Slot7 = new Panel();
+            Slot7 = new Panel();
+            Label_Slot7 = new Label();
+            Back_Ground_Slot8 = new Panel();
+            Slot8 = new Panel();
+            Back_Ground_Slot9 = new Panel();
+            Slot9 = new Panel();
+            Back_Ground_Slot10 = new Panel();
+            Slot10 = new Panel();
+            Back_Ground_Slot11 = new Panel();
+            Slot11 = new Panel();
+            Back_Ground_Slot12 = new Panel();
+            Slot12 = new Panel();
+            Back_Ground_Slot13 = new Panel();
+            Slot13 = new Panel();
+            Back_Ground_Slot14 = new Panel();
+            Slot14 = new Panel();
+            Back_Ground_Slot15 = new Panel();
+            Slot15 = new Panel();
+            Back_Ground_Slot16 = new Panel();
+            Slot16 = new Panel();
+            Back_Ground_Slot17 = new Panel();
+            Slot17 = new Panel();
+            Back_Ground_Slot18 = new Panel();
+            Slot18 = new Panel();
+            Back_Ground_Slot19 = new Panel();
+            Slot19 = new Panel();
+            Back_Ground_Slot20 = new Panel();
+            Slot20 = new Panel();
+            Back_Ground_Slot21 = new Panel();
+            Slot21 = new Panel();
             Inventory_Panel = new Panel();
             panel1 = new Panel();
             label6 = new Label();
@@ -106,29 +114,42 @@
             AttackUp_I = new Button();
             skills_Panel = new Panel();
             Settings_Button = new Button();
+            Label_Amount2 = new Label();
+            Label_Amount3 = new Label();
+            Label_Amount4 = new Label();
+            Label_Amount5 = new Label();
+            Label_Amount6 = new Label();
+            Label_Amount7 = new Label();
             background_console.SuspendLayout();
             panel3.SuspendLayout();
-            panel31.SuspendLayout();
-            panel17.SuspendLayout();
-            panel33.SuspendLayout();
-            Slot7.SuspendLayout();
-            panel35.SuspendLayout();
-            panel19.SuspendLayout();
-            panel37.SuspendLayout();
-            panel39.SuspendLayout();
-            Slot6.SuspendLayout();
-            panel41.SuspendLayout();
-            panel21.SuspendLayout();
-            panel43.SuspendLayout();
-            Slot5.SuspendLayout();
-            panel23.SuspendLayout();
-            Slot4.SuspendLayout();
-            panel25.SuspendLayout();
-            Slot3.SuspendLayout();
-            panel27.SuspendLayout();
-            Slot2.SuspendLayout();
-            panel29.SuspendLayout();
+            Back_Ground_Slot1.SuspendLayout();
             Slot1.SuspendLayout();
+            Back_Ground_Slot2.SuspendLayout();
+            Slot2.SuspendLayout();
+            Back_Ground_Slot3.SuspendLayout();
+            Slot3.SuspendLayout();
+            Back_Ground_Slot4.SuspendLayout();
+            Slot4.SuspendLayout();
+            Back_Ground_Slot5.SuspendLayout();
+            Slot5.SuspendLayout();
+            Back_Ground_Slot6.SuspendLayout();
+            Slot6.SuspendLayout();
+            Back_Ground_Slot7.SuspendLayout();
+            Slot7.SuspendLayout();
+            Back_Ground_Slot8.SuspendLayout();
+            Back_Ground_Slot9.SuspendLayout();
+            Back_Ground_Slot10.SuspendLayout();
+            Back_Ground_Slot11.SuspendLayout();
+            Back_Ground_Slot12.SuspendLayout();
+            Back_Ground_Slot13.SuspendLayout();
+            Back_Ground_Slot14.SuspendLayout();
+            Back_Ground_Slot15.SuspendLayout();
+            Back_Ground_Slot16.SuspendLayout();
+            Back_Ground_Slot17.SuspendLayout();
+            Back_Ground_Slot18.SuspendLayout();
+            Back_Ground_Slot19.SuspendLayout();
+            Back_Ground_Slot20.SuspendLayout();
+            Back_Ground_Slot21.SuspendLayout();
             Inventory_Panel.SuspendLayout();
             panel1.SuspendLayout();
             skills_Panel.SuspendLayout();
@@ -294,409 +315,495 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(30, 30, 30);
-            panel3.Controls.Add(panel31);
-            panel3.Controls.Add(panel17);
-            panel3.Controls.Add(panel33);
-            panel3.Controls.Add(Slot7);
-            panel3.Controls.Add(panel35);
-            panel3.Controls.Add(panel19);
-            panel3.Controls.Add(panel37);
-            panel3.Controls.Add(panel39);
-            panel3.Controls.Add(Slot6);
-            panel3.Controls.Add(panel41);
-            panel3.Controls.Add(panel21);
-            panel3.Controls.Add(panel43);
-            panel3.Controls.Add(Slot5);
-            panel3.Controls.Add(panel23);
-            panel3.Controls.Add(Slot4);
-            panel3.Controls.Add(panel25);
-            panel3.Controls.Add(Slot3);
-            panel3.Controls.Add(panel27);
-            panel3.Controls.Add(Slot2);
-            panel3.Controls.Add(panel29);
-            panel3.Controls.Add(Slot1);
+            panel3.Controls.Add(Back_Ground_Slot1);
+            panel3.Controls.Add(Back_Ground_Slot2);
+            panel3.Controls.Add(Back_Ground_Slot3);
+            panel3.Controls.Add(Back_Ground_Slot4);
+            panel3.Controls.Add(Back_Ground_Slot5);
+            panel3.Controls.Add(Back_Ground_Slot6);
+            panel3.Controls.Add(Back_Ground_Slot7);
+            panel3.Controls.Add(Back_Ground_Slot8);
+            panel3.Controls.Add(Back_Ground_Slot9);
+            panel3.Controls.Add(Back_Ground_Slot10);
+            panel3.Controls.Add(Back_Ground_Slot11);
+            panel3.Controls.Add(Back_Ground_Slot12);
+            panel3.Controls.Add(Back_Ground_Slot13);
+            panel3.Controls.Add(Back_Ground_Slot14);
+            panel3.Controls.Add(Back_Ground_Slot15);
+            panel3.Controls.Add(Back_Ground_Slot16);
+            panel3.Controls.Add(Back_Ground_Slot17);
+            panel3.Controls.Add(Back_Ground_Slot18);
+            panel3.Controls.Add(Back_Ground_Slot19);
+            panel3.Controls.Add(Back_Ground_Slot20);
+            panel3.Controls.Add(Back_Ground_Slot21);
             panel3.Location = new Point(2, 2);
             panel3.Name = "panel3";
             panel3.Size = new Size(467, 354);
             panel3.TabIndex = 0;
             // 
-            // panel31
-            // 
-            panel31.BackColor = Color.HotPink;
-            panel31.Controls.Add(panel32);
-            panel31.Location = new Point(389, 157);
-            panel31.Name = "panel31";
-            panel31.Size = new Size(55, 55);
-            panel31.TabIndex = 4;
-            // 
-            // panel32
-            // 
-            panel32.BackColor = Color.FromArgb(30, 30, 30);
-            panel32.BorderStyle = BorderStyle.FixedSingle;
-            panel32.Location = new Point(2, 2);
-            panel32.Name = "panel32";
-            panel32.Size = new Size(51, 51);
-            panel32.TabIndex = 1;
-            // 
-            // panel17
-            // 
-            panel17.BackColor = Color.HotPink;
-            panel17.Controls.Add(panel18);
-            panel17.Location = new Point(389, 87);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(55, 55);
-            panel17.TabIndex = 4;
-            // 
-            // panel18
-            // 
-            panel18.BackColor = Color.FromArgb(30, 30, 30);
-            panel18.BorderStyle = BorderStyle.FixedSingle;
-            panel18.Location = new Point(2, 2);
-            panel18.Name = "panel18";
-            panel18.Size = new Size(51, 51);
-            panel18.TabIndex = 1;
-            // 
-            // panel33
-            // 
-            panel33.BackColor = Color.HotPink;
-            panel33.Controls.Add(panel34);
-            panel33.Location = new Point(328, 157);
-            panel33.Name = "panel33";
-            panel33.Size = new Size(55, 55);
-            panel33.TabIndex = 5;
-            // 
-            // panel34
-            // 
-            panel34.BackColor = Color.FromArgb(30, 30, 30);
-            panel34.BorderStyle = BorderStyle.FixedSingle;
-            panel34.Location = new Point(2, 2);
-            panel34.Name = "panel34";
-            panel34.Size = new Size(51, 51);
-            panel34.TabIndex = 1;
-            // 
-            // Slot7
-            // 
-            Slot7.BackColor = Color.HotPink;
-            Slot7.Controls.Add(panel16);
-            Slot7.Location = new Point(389, 15);
-            Slot7.Name = "Slot7";
-            Slot7.Size = new Size(55, 55);
-            Slot7.TabIndex = 2;
-            // 
-            // panel16
-            // 
-            panel16.BackColor = Color.FromArgb(30, 30, 30);
-            panel16.BorderStyle = BorderStyle.FixedSingle;
-            panel16.Location = new Point(2, 2);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(51, 51);
-            panel16.TabIndex = 1;
-            // 
-            // panel35
-            // 
-            panel35.BackColor = Color.HotPink;
-            panel35.Controls.Add(panel36);
-            panel35.Location = new Point(263, 157);
-            panel35.Name = "panel35";
-            panel35.Size = new Size(55, 55);
-            panel35.TabIndex = 6;
-            // 
-            // panel36
-            // 
-            panel36.BackColor = Color.FromArgb(30, 30, 30);
-            panel36.BorderStyle = BorderStyle.FixedSingle;
-            panel36.Location = new Point(2, 2);
-            panel36.Name = "panel36";
-            panel36.Size = new Size(51, 51);
-            panel36.TabIndex = 1;
-            // 
-            // panel19
-            // 
-            panel19.BackColor = Color.HotPink;
-            panel19.Controls.Add(panel20);
-            panel19.Location = new Point(328, 87);
-            panel19.Name = "panel19";
-            panel19.Size = new Size(55, 55);
-            panel19.TabIndex = 5;
-            // 
-            // panel20
-            // 
-            panel20.BackColor = Color.FromArgb(30, 30, 30);
-            panel20.BorderStyle = BorderStyle.FixedSingle;
-            panel20.Location = new Point(2, 2);
-            panel20.Name = "panel20";
-            panel20.Size = new Size(51, 51);
-            panel20.TabIndex = 1;
-            // 
-            // panel37
-            // 
-            panel37.BackColor = Color.HotPink;
-            panel37.Controls.Add(panel38);
-            panel37.Location = new Point(202, 157);
-            panel37.Name = "panel37";
-            panel37.Size = new Size(55, 55);
-            panel37.TabIndex = 7;
-            // 
-            // panel38
-            // 
-            panel38.BackColor = Color.FromArgb(30, 30, 30);
-            panel38.BorderStyle = BorderStyle.FixedSingle;
-            panel38.Location = new Point(2, 2);
-            panel38.Name = "panel38";
-            panel38.Size = new Size(51, 51);
-            panel38.TabIndex = 1;
-            // 
-            // panel39
-            // 
-            panel39.BackColor = Color.HotPink;
-            panel39.Controls.Add(panel40);
-            panel39.Location = new Point(141, 157);
-            panel39.Name = "panel39";
-            panel39.Size = new Size(55, 55);
-            panel39.TabIndex = 8;
-            // 
-            // panel40
-            // 
-            panel40.BackColor = Color.FromArgb(30, 30, 30);
-            panel40.BorderStyle = BorderStyle.FixedSingle;
-            panel40.Location = new Point(2, 2);
-            panel40.Name = "panel40";
-            panel40.Size = new Size(51, 51);
-            panel40.TabIndex = 1;
-            // 
-            // Slot6
-            // 
-            Slot6.BackColor = Color.HotPink;
-            Slot6.Controls.Add(panel14);
-            Slot6.Location = new Point(328, 15);
-            Slot6.Name = "Slot6";
-            Slot6.Size = new Size(55, 55);
-            Slot6.TabIndex = 2;
-            // 
-            // panel14
-            // 
-            panel14.BackColor = Color.FromArgb(30, 30, 30);
-            panel14.BorderStyle = BorderStyle.FixedSingle;
-            panel14.Location = new Point(2, 2);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(51, 51);
-            panel14.TabIndex = 1;
-            // 
-            // panel41
-            // 
-            panel41.BackColor = Color.HotPink;
-            panel41.Controls.Add(panel42);
-            panel41.Location = new Point(80, 157);
-            panel41.Name = "panel41";
-            panel41.Size = new Size(55, 55);
-            panel41.TabIndex = 9;
-            // 
-            // panel42
-            // 
-            panel42.BackColor = Color.FromArgb(30, 30, 30);
-            panel42.BorderStyle = BorderStyle.FixedSingle;
-            panel42.Location = new Point(2, 2);
-            panel42.Name = "panel42";
-            panel42.Size = new Size(51, 51);
-            panel42.TabIndex = 1;
-            // 
-            // panel21
-            // 
-            panel21.BackColor = Color.HotPink;
-            panel21.Controls.Add(panel22);
-            panel21.Location = new Point(263, 87);
-            panel21.Name = "panel21";
-            panel21.Size = new Size(55, 55);
-            panel21.TabIndex = 6;
-            // 
-            // panel22
-            // 
-            panel22.BackColor = Color.FromArgb(30, 30, 30);
-            panel22.BorderStyle = BorderStyle.FixedSingle;
-            panel22.Location = new Point(2, 2);
-            panel22.Name = "panel22";
-            panel22.Size = new Size(51, 51);
-            panel22.TabIndex = 1;
-            // 
-            // panel43
-            // 
-            panel43.BackColor = Color.HotPink;
-            panel43.Controls.Add(panel44);
-            panel43.Location = new Point(19, 157);
-            panel43.Name = "panel43";
-            panel43.Size = new Size(55, 55);
-            panel43.TabIndex = 3;
-            // 
-            // panel44
-            // 
-            panel44.BackColor = Color.FromArgb(30, 30, 30);
-            panel44.BorderStyle = BorderStyle.FixedSingle;
-            panel44.Location = new Point(2, 2);
-            panel44.Name = "panel44";
-            panel44.Size = new Size(51, 51);
-            panel44.TabIndex = 1;
-            // 
-            // Slot5
-            // 
-            Slot5.BackColor = Color.HotPink;
-            Slot5.Controls.Add(panel12);
-            Slot5.Location = new Point(263, 15);
-            Slot5.Name = "Slot5";
-            Slot5.Size = new Size(55, 55);
-            Slot5.TabIndex = 2;
-            // 
-            // panel12
-            // 
-            panel12.BackColor = Color.FromArgb(30, 30, 30);
-            panel12.BorderStyle = BorderStyle.FixedSingle;
-            panel12.Location = new Point(2, 2);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(51, 51);
-            panel12.TabIndex = 1;
-            // 
-            // panel23
-            // 
-            panel23.BackColor = Color.HotPink;
-            panel23.Controls.Add(panel24);
-            panel23.Location = new Point(202, 87);
-            panel23.Name = "panel23";
-            panel23.Size = new Size(55, 55);
-            panel23.TabIndex = 7;
-            // 
-            // panel24
-            // 
-            panel24.BackColor = Color.FromArgb(30, 30, 30);
-            panel24.BorderStyle = BorderStyle.FixedSingle;
-            panel24.Location = new Point(2, 2);
-            panel24.Name = "panel24";
-            panel24.Size = new Size(51, 51);
-            panel24.TabIndex = 1;
-            // 
-            // Slot4
-            // 
-            Slot4.BackColor = Color.HotPink;
-            Slot4.Controls.Add(panel10);
-            Slot4.Location = new Point(202, 15);
-            Slot4.Name = "Slot4";
-            Slot4.Size = new Size(55, 55);
-            Slot4.TabIndex = 2;
-            // 
-            // panel10
-            // 
-            panel10.BackColor = Color.FromArgb(30, 30, 30);
-            panel10.BorderStyle = BorderStyle.FixedSingle;
-            panel10.Location = new Point(2, 2);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(51, 51);
-            panel10.TabIndex = 1;
-            // 
-            // panel25
-            // 
-            panel25.BackColor = Color.HotPink;
-            panel25.Controls.Add(panel26);
-            panel25.Location = new Point(141, 87);
-            panel25.Name = "panel25";
-            panel25.Size = new Size(55, 55);
-            panel25.TabIndex = 8;
-            // 
-            // panel26
-            // 
-            panel26.BackColor = Color.FromArgb(30, 30, 30);
-            panel26.BorderStyle = BorderStyle.FixedSingle;
-            panel26.Location = new Point(2, 2);
-            panel26.Name = "panel26";
-            panel26.Size = new Size(51, 51);
-            panel26.TabIndex = 1;
-            // 
-            // Slot3
-            // 
-            Slot3.BackColor = Color.HotPink;
-            Slot3.Controls.Add(panel8);
-            Slot3.Location = new Point(141, 15);
-            Slot3.Name = "Slot3";
-            Slot3.Size = new Size(55, 55);
-            Slot3.TabIndex = 2;
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.FromArgb(30, 30, 30);
-            panel8.BorderStyle = BorderStyle.FixedSingle;
-            panel8.Location = new Point(2, 2);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(51, 51);
-            panel8.TabIndex = 1;
-            // 
-            // panel27
-            // 
-            panel27.BackColor = Color.HotPink;
-            panel27.Controls.Add(panel28);
-            panel27.Location = new Point(80, 87);
-            panel27.Name = "panel27";
-            panel27.Size = new Size(55, 55);
-            panel27.TabIndex = 9;
-            // 
-            // panel28
-            // 
-            panel28.BackColor = Color.FromArgb(30, 30, 30);
-            panel28.BorderStyle = BorderStyle.FixedSingle;
-            panel28.Location = new Point(2, 2);
-            panel28.Name = "panel28";
-            panel28.Size = new Size(51, 51);
-            panel28.TabIndex = 1;
-            // 
-            // Slot2
-            // 
-            Slot2.BackColor = Color.HotPink;
-            Slot2.Controls.Add(panel6);
-            Slot2.Location = new Point(80, 15);
-            Slot2.Name = "Slot2";
-            Slot2.Size = new Size(55, 55);
-            Slot2.TabIndex = 2;
-            // 
-            // panel6
-            // 
-            panel6.BackColor = Color.FromArgb(30, 30, 30);
-            panel6.BorderStyle = BorderStyle.FixedSingle;
-            panel6.Location = new Point(2, 2);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(51, 51);
-            panel6.TabIndex = 1;
-            // 
-            // panel29
-            // 
-            panel29.BackColor = Color.HotPink;
-            panel29.Controls.Add(panel30);
-            panel29.Location = new Point(19, 87);
-            panel29.Name = "panel29";
-            panel29.Size = new Size(55, 55);
-            panel29.TabIndex = 3;
-            // 
-            // panel30
-            // 
-            panel30.BackColor = Color.FromArgb(30, 30, 30);
-            panel30.BorderStyle = BorderStyle.FixedSingle;
-            panel30.Location = new Point(2, 2);
-            panel30.Name = "panel30";
-            panel30.Size = new Size(51, 51);
-            panel30.TabIndex = 1;
+            // Back_Ground_Slot1
+            // 
+            Back_Ground_Slot1.BackColor = Color.HotPink;
+            Back_Ground_Slot1.Controls.Add(Slot1);
+            Back_Ground_Slot1.Location = new Point(19, 15);
+            Back_Ground_Slot1.Name = "Back_Ground_Slot1";
+            Back_Ground_Slot1.Size = new Size(55, 55);
+            Back_Ground_Slot1.TabIndex = 0;
             // 
             // Slot1
             // 
-            Slot1.BackColor = Color.HotPink;
-            Slot1.Controls.Add(panel4);
-            Slot1.Location = new Point(19, 15);
+            Slot1.BackColor = Color.FromArgb(30, 30, 30);
+            Slot1.BorderStyle = BorderStyle.FixedSingle;
+            Slot1.Controls.Add(Label_Amount1);
+            Slot1.Controls.Add(Label_Slot1);
+            Slot1.Location = new Point(2, 2);
             Slot1.Name = "Slot1";
-            Slot1.Size = new Size(55, 55);
-            Slot1.TabIndex = 0;
+            Slot1.Size = new Size(51, 51);
+            Slot1.TabIndex = 1;
             // 
-            // panel4
+            // Label_Amount1
             // 
-            panel4.BackColor = Color.FromArgb(30, 30, 30);
-            panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Location = new Point(2, 2);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(51, 51);
-            panel4.TabIndex = 1;
+            Label_Amount1.AutoSize = true;
+            Label_Amount1.Location = new Point(35, 35);
+            Label_Amount1.Name = "Label_Amount1";
+            Label_Amount1.Size = new Size(18, 15);
+            Label_Amount1.TabIndex = 1;
+            Label_Amount1.Text = "W";
+            // 
+            // Label_Slot1
+            // 
+            Label_Slot1.AutoSize = true;
+            Label_Slot1.Location = new Point(15, 15);
+            Label_Slot1.Name = "Label_Slot1";
+            Label_Slot1.Size = new Size(18, 15);
+            Label_Slot1.TabIndex = 0;
+            Label_Slot1.Text = "W";
+            // 
+            // Back_Ground_Slot2
+            // 
+            Back_Ground_Slot2.BackColor = Color.HotPink;
+            Back_Ground_Slot2.Controls.Add(Slot2);
+            Back_Ground_Slot2.Location = new Point(80, 15);
+            Back_Ground_Slot2.Name = "Back_Ground_Slot2";
+            Back_Ground_Slot2.Size = new Size(55, 55);
+            Back_Ground_Slot2.TabIndex = 2;
+            // 
+            // Slot2
+            // 
+            Slot2.BackColor = Color.FromArgb(30, 30, 30);
+            Slot2.BorderStyle = BorderStyle.FixedSingle;
+            Slot2.Controls.Add(Label_Amount2);
+            Slot2.Controls.Add(Label_Slot2);
+            Slot2.Location = new Point(2, 2);
+            Slot2.Name = "Slot2";
+            Slot2.Size = new Size(51, 51);
+            Slot2.TabIndex = 1;
+            // 
+            // Label_Slot2
+            // 
+            Label_Slot2.AutoSize = true;
+            Label_Slot2.Location = new Point(15, 15);
+            Label_Slot2.Name = "Label_Slot2";
+            Label_Slot2.Size = new Size(18, 15);
+            Label_Slot2.TabIndex = 1;
+            Label_Slot2.Text = "W";
+            // 
+            // Back_Ground_Slot3
+            // 
+            Back_Ground_Slot3.BackColor = Color.HotPink;
+            Back_Ground_Slot3.Controls.Add(Slot3);
+            Back_Ground_Slot3.Location = new Point(141, 15);
+            Back_Ground_Slot3.Name = "Back_Ground_Slot3";
+            Back_Ground_Slot3.Size = new Size(55, 55);
+            Back_Ground_Slot3.TabIndex = 2;
+            // 
+            // Slot3
+            // 
+            Slot3.BackColor = Color.FromArgb(30, 30, 30);
+            Slot3.BorderStyle = BorderStyle.FixedSingle;
+            Slot3.Controls.Add(Label_Amount3);
+            Slot3.Controls.Add(Label_Slot3);
+            Slot3.Location = new Point(2, 2);
+            Slot3.Name = "Slot3";
+            Slot3.Size = new Size(51, 51);
+            Slot3.TabIndex = 1;
+            // 
+            // Label_Slot3
+            // 
+            Label_Slot3.AutoSize = true;
+            Label_Slot3.Location = new Point(15, 15);
+            Label_Slot3.Name = "Label_Slot3";
+            Label_Slot3.Size = new Size(18, 15);
+            Label_Slot3.TabIndex = 2;
+            Label_Slot3.Text = "W";
+            // 
+            // Back_Ground_Slot4
+            // 
+            Back_Ground_Slot4.BackColor = Color.HotPink;
+            Back_Ground_Slot4.Controls.Add(Slot4);
+            Back_Ground_Slot4.Location = new Point(202, 15);
+            Back_Ground_Slot4.Name = "Back_Ground_Slot4";
+            Back_Ground_Slot4.Size = new Size(55, 55);
+            Back_Ground_Slot4.TabIndex = 2;
+            // 
+            // Slot4
+            // 
+            Slot4.BackColor = Color.FromArgb(30, 30, 30);
+            Slot4.BorderStyle = BorderStyle.FixedSingle;
+            Slot4.Controls.Add(Label_Amount4);
+            Slot4.Controls.Add(Label_Slot4);
+            Slot4.Location = new Point(2, 2);
+            Slot4.Name = "Slot4";
+            Slot4.Size = new Size(51, 51);
+            Slot4.TabIndex = 1;
+            // 
+            // Label_Slot4
+            // 
+            Label_Slot4.AutoSize = true;
+            Label_Slot4.Location = new Point(15, 15);
+            Label_Slot4.Name = "Label_Slot4";
+            Label_Slot4.Size = new Size(18, 15);
+            Label_Slot4.TabIndex = 3;
+            Label_Slot4.Text = "W";
+            // 
+            // Back_Ground_Slot5
+            // 
+            Back_Ground_Slot5.BackColor = Color.HotPink;
+            Back_Ground_Slot5.Controls.Add(Slot5);
+            Back_Ground_Slot5.Location = new Point(263, 15);
+            Back_Ground_Slot5.Name = "Back_Ground_Slot5";
+            Back_Ground_Slot5.Size = new Size(55, 55);
+            Back_Ground_Slot5.TabIndex = 2;
+            // 
+            // Slot5
+            // 
+            Slot5.BackColor = Color.FromArgb(30, 30, 30);
+            Slot5.BorderStyle = BorderStyle.FixedSingle;
+            Slot5.Controls.Add(Label_Amount5);
+            Slot5.Controls.Add(Label_Slot5);
+            Slot5.Location = new Point(2, 2);
+            Slot5.Name = "Slot5";
+            Slot5.Size = new Size(51, 51);
+            Slot5.TabIndex = 1;
+            // 
+            // Label_Slot5
+            // 
+            Label_Slot5.AutoSize = true;
+            Label_Slot5.Location = new Point(15, 15);
+            Label_Slot5.Name = "Label_Slot5";
+            Label_Slot5.Size = new Size(18, 15);
+            Label_Slot5.TabIndex = 10;
+            Label_Slot5.Text = "W";
+            // 
+            // Back_Ground_Slot6
+            // 
+            Back_Ground_Slot6.BackColor = Color.HotPink;
+            Back_Ground_Slot6.Controls.Add(Slot6);
+            Back_Ground_Slot6.Location = new Point(328, 15);
+            Back_Ground_Slot6.Name = "Back_Ground_Slot6";
+            Back_Ground_Slot6.Size = new Size(55, 55);
+            Back_Ground_Slot6.TabIndex = 2;
+            // 
+            // Slot6
+            // 
+            Slot6.BackColor = Color.FromArgb(30, 30, 30);
+            Slot6.BorderStyle = BorderStyle.FixedSingle;
+            Slot6.Controls.Add(Label_Amount6);
+            Slot6.Controls.Add(Label_Slot6);
+            Slot6.Location = new Point(2, 2);
+            Slot6.Name = "Slot6";
+            Slot6.Size = new Size(51, 51);
+            Slot6.TabIndex = 1;
+            // 
+            // Label_Slot6
+            // 
+            Label_Slot6.AutoSize = true;
+            Label_Slot6.Location = new Point(15, 15);
+            Label_Slot6.Name = "Label_Slot6";
+            Label_Slot6.Size = new Size(18, 15);
+            Label_Slot6.TabIndex = 1;
+            Label_Slot6.Text = "W";
+            // 
+            // Back_Ground_Slot7
+            // 
+            Back_Ground_Slot7.BackColor = Color.HotPink;
+            Back_Ground_Slot7.Controls.Add(Slot7);
+            Back_Ground_Slot7.Location = new Point(389, 15);
+            Back_Ground_Slot7.Name = "Back_Ground_Slot7";
+            Back_Ground_Slot7.Size = new Size(55, 55);
+            Back_Ground_Slot7.TabIndex = 2;
+            // 
+            // Slot7
+            // 
+            Slot7.BackColor = Color.FromArgb(30, 30, 30);
+            Slot7.BorderStyle = BorderStyle.FixedSingle;
+            Slot7.Controls.Add(Label_Amount7);
+            Slot7.Controls.Add(Label_Slot7);
+            Slot7.Location = new Point(2, 2);
+            Slot7.Name = "Slot7";
+            Slot7.Size = new Size(51, 51);
+            Slot7.TabIndex = 1;
+            // 
+            // Label_Slot7
+            // 
+            Label_Slot7.AutoSize = true;
+            Label_Slot7.Location = new Point(15, 15);
+            Label_Slot7.Name = "Label_Slot7";
+            Label_Slot7.Size = new Size(18, 15);
+            Label_Slot7.TabIndex = 1;
+            Label_Slot7.Text = "W";
+            // 
+            // Back_Ground_Slot8
+            // 
+            Back_Ground_Slot8.BackColor = Color.HotPink;
+            Back_Ground_Slot8.Controls.Add(Slot8);
+            Back_Ground_Slot8.Location = new Point(19, 87);
+            Back_Ground_Slot8.Name = "Back_Ground_Slot8";
+            Back_Ground_Slot8.Size = new Size(55, 55);
+            Back_Ground_Slot8.TabIndex = 3;
+            // 
+            // Slot8
+            // 
+            Slot8.BackColor = Color.FromArgb(30, 30, 30);
+            Slot8.BorderStyle = BorderStyle.FixedSingle;
+            Slot8.Location = new Point(2, 2);
+            Slot8.Name = "Slot8";
+            Slot8.Size = new Size(51, 51);
+            Slot8.TabIndex = 1;
+            // 
+            // Back_Ground_Slot9
+            // 
+            Back_Ground_Slot9.BackColor = Color.HotPink;
+            Back_Ground_Slot9.Controls.Add(Slot9);
+            Back_Ground_Slot9.Location = new Point(80, 87);
+            Back_Ground_Slot9.Name = "Back_Ground_Slot9";
+            Back_Ground_Slot9.Size = new Size(55, 55);
+            Back_Ground_Slot9.TabIndex = 9;
+            // 
+            // Slot9
+            // 
+            Slot9.BackColor = Color.FromArgb(30, 30, 30);
+            Slot9.BorderStyle = BorderStyle.FixedSingle;
+            Slot9.Location = new Point(2, 2);
+            Slot9.Name = "Slot9";
+            Slot9.Size = new Size(51, 51);
+            Slot9.TabIndex = 1;
+            // 
+            // Back_Ground_Slot10
+            // 
+            Back_Ground_Slot10.BackColor = Color.HotPink;
+            Back_Ground_Slot10.Controls.Add(Slot10);
+            Back_Ground_Slot10.Location = new Point(141, 87);
+            Back_Ground_Slot10.Name = "Back_Ground_Slot10";
+            Back_Ground_Slot10.Size = new Size(55, 55);
+            Back_Ground_Slot10.TabIndex = 8;
+            // 
+            // Slot10
+            // 
+            Slot10.BackColor = Color.FromArgb(30, 30, 30);
+            Slot10.BorderStyle = BorderStyle.FixedSingle;
+            Slot10.Location = new Point(2, 2);
+            Slot10.Name = "Slot10";
+            Slot10.Size = new Size(51, 51);
+            Slot10.TabIndex = 1;
+            // 
+            // Back_Ground_Slot11
+            // 
+            Back_Ground_Slot11.BackColor = Color.HotPink;
+            Back_Ground_Slot11.Controls.Add(Slot11);
+            Back_Ground_Slot11.Location = new Point(202, 87);
+            Back_Ground_Slot11.Name = "Back_Ground_Slot11";
+            Back_Ground_Slot11.Size = new Size(55, 55);
+            Back_Ground_Slot11.TabIndex = 7;
+            // 
+            // Slot11
+            // 
+            Slot11.BackColor = Color.FromArgb(30, 30, 30);
+            Slot11.BorderStyle = BorderStyle.FixedSingle;
+            Slot11.Location = new Point(2, 2);
+            Slot11.Name = "Slot11";
+            Slot11.Size = new Size(51, 51);
+            Slot11.TabIndex = 1;
+            // 
+            // Back_Ground_Slot12
+            // 
+            Back_Ground_Slot12.BackColor = Color.HotPink;
+            Back_Ground_Slot12.Controls.Add(Slot12);
+            Back_Ground_Slot12.Location = new Point(263, 87);
+            Back_Ground_Slot12.Name = "Back_Ground_Slot12";
+            Back_Ground_Slot12.Size = new Size(55, 55);
+            Back_Ground_Slot12.TabIndex = 6;
+            // 
+            // Slot12
+            // 
+            Slot12.BackColor = Color.FromArgb(30, 30, 30);
+            Slot12.BorderStyle = BorderStyle.FixedSingle;
+            Slot12.Location = new Point(2, 2);
+            Slot12.Name = "Slot12";
+            Slot12.Size = new Size(51, 51);
+            Slot12.TabIndex = 1;
+            // 
+            // Back_Ground_Slot13
+            // 
+            Back_Ground_Slot13.BackColor = Color.HotPink;
+            Back_Ground_Slot13.Controls.Add(Slot13);
+            Back_Ground_Slot13.Location = new Point(328, 87);
+            Back_Ground_Slot13.Name = "Back_Ground_Slot13";
+            Back_Ground_Slot13.Size = new Size(55, 55);
+            Back_Ground_Slot13.TabIndex = 5;
+            // 
+            // Slot13
+            // 
+            Slot13.BackColor = Color.FromArgb(30, 30, 30);
+            Slot13.BorderStyle = BorderStyle.FixedSingle;
+            Slot13.Location = new Point(2, 2);
+            Slot13.Name = "Slot13";
+            Slot13.Size = new Size(51, 51);
+            Slot13.TabIndex = 1;
+            // 
+            // Back_Ground_Slot14
+            // 
+            Back_Ground_Slot14.BackColor = Color.HotPink;
+            Back_Ground_Slot14.Controls.Add(Slot14);
+            Back_Ground_Slot14.Location = new Point(389, 87);
+            Back_Ground_Slot14.Name = "Back_Ground_Slot14";
+            Back_Ground_Slot14.Size = new Size(55, 55);
+            Back_Ground_Slot14.TabIndex = 4;
+            // 
+            // Slot14
+            // 
+            Slot14.BackColor = Color.FromArgb(30, 30, 30);
+            Slot14.BorderStyle = BorderStyle.FixedSingle;
+            Slot14.Location = new Point(2, 2);
+            Slot14.Name = "Slot14";
+            Slot14.Size = new Size(51, 51);
+            Slot14.TabIndex = 1;
+            // 
+            // Back_Ground_Slot15
+            // 
+            Back_Ground_Slot15.BackColor = Color.HotPink;
+            Back_Ground_Slot15.Controls.Add(Slot15);
+            Back_Ground_Slot15.Location = new Point(19, 157);
+            Back_Ground_Slot15.Name = "Back_Ground_Slot15";
+            Back_Ground_Slot15.Size = new Size(55, 55);
+            Back_Ground_Slot15.TabIndex = 3;
+            // 
+            // Slot15
+            // 
+            Slot15.BackColor = Color.FromArgb(30, 30, 30);
+            Slot15.BorderStyle = BorderStyle.FixedSingle;
+            Slot15.Location = new Point(2, 2);
+            Slot15.Name = "Slot15";
+            Slot15.Size = new Size(51, 51);
+            Slot15.TabIndex = 1;
+            // 
+            // Back_Ground_Slot16
+            // 
+            Back_Ground_Slot16.BackColor = Color.HotPink;
+            Back_Ground_Slot16.Controls.Add(Slot16);
+            Back_Ground_Slot16.Location = new Point(80, 157);
+            Back_Ground_Slot16.Name = "Back_Ground_Slot16";
+            Back_Ground_Slot16.Size = new Size(55, 55);
+            Back_Ground_Slot16.TabIndex = 9;
+            // 
+            // Slot16
+            // 
+            Slot16.BackColor = Color.FromArgb(30, 30, 30);
+            Slot16.BorderStyle = BorderStyle.FixedSingle;
+            Slot16.Location = new Point(2, 2);
+            Slot16.Name = "Slot16";
+            Slot16.Size = new Size(51, 51);
+            Slot16.TabIndex = 1;
+            // 
+            // Back_Ground_Slot17
+            // 
+            Back_Ground_Slot17.BackColor = Color.HotPink;
+            Back_Ground_Slot17.Controls.Add(Slot17);
+            Back_Ground_Slot17.Location = new Point(141, 157);
+            Back_Ground_Slot17.Name = "Back_Ground_Slot17";
+            Back_Ground_Slot17.Size = new Size(55, 55);
+            Back_Ground_Slot17.TabIndex = 8;
+            // 
+            // Slot17
+            // 
+            Slot17.BackColor = Color.FromArgb(30, 30, 30);
+            Slot17.BorderStyle = BorderStyle.FixedSingle;
+            Slot17.Location = new Point(2, 2);
+            Slot17.Name = "Slot17";
+            Slot17.Size = new Size(51, 51);
+            Slot17.TabIndex = 1;
+            // 
+            // Back_Ground_Slot18
+            // 
+            Back_Ground_Slot18.BackColor = Color.HotPink;
+            Back_Ground_Slot18.Controls.Add(Slot18);
+            Back_Ground_Slot18.Location = new Point(202, 157);
+            Back_Ground_Slot18.Name = "Back_Ground_Slot18";
+            Back_Ground_Slot18.Size = new Size(55, 55);
+            Back_Ground_Slot18.TabIndex = 7;
+            // 
+            // Slot18
+            // 
+            Slot18.BackColor = Color.FromArgb(30, 30, 30);
+            Slot18.BorderStyle = BorderStyle.FixedSingle;
+            Slot18.Location = new Point(2, 2);
+            Slot18.Name = "Slot18";
+            Slot18.Size = new Size(51, 51);
+            Slot18.TabIndex = 1;
+            // 
+            // Back_Ground_Slot19
+            // 
+            Back_Ground_Slot19.BackColor = Color.HotPink;
+            Back_Ground_Slot19.Controls.Add(Slot19);
+            Back_Ground_Slot19.Location = new Point(263, 157);
+            Back_Ground_Slot19.Name = "Back_Ground_Slot19";
+            Back_Ground_Slot19.Size = new Size(55, 55);
+            Back_Ground_Slot19.TabIndex = 6;
+            // 
+            // Slot19
+            // 
+            Slot19.BackColor = Color.FromArgb(30, 30, 30);
+            Slot19.BorderStyle = BorderStyle.FixedSingle;
+            Slot19.Location = new Point(2, 2);
+            Slot19.Name = "Slot19";
+            Slot19.Size = new Size(51, 51);
+            Slot19.TabIndex = 1;
+            // 
+            // Back_Ground_Slot20
+            // 
+            Back_Ground_Slot20.BackColor = Color.HotPink;
+            Back_Ground_Slot20.Controls.Add(Slot20);
+            Back_Ground_Slot20.Location = new Point(328, 157);
+            Back_Ground_Slot20.Name = "Back_Ground_Slot20";
+            Back_Ground_Slot20.Size = new Size(55, 55);
+            Back_Ground_Slot20.TabIndex = 5;
+            // 
+            // Slot20
+            // 
+            Slot20.BackColor = Color.FromArgb(30, 30, 30);
+            Slot20.BorderStyle = BorderStyle.FixedSingle;
+            Slot20.Location = new Point(2, 2);
+            Slot20.Name = "Slot20";
+            Slot20.Size = new Size(51, 51);
+            Slot20.TabIndex = 1;
+            // 
+            // Back_Ground_Slot21
+            // 
+            Back_Ground_Slot21.BackColor = Color.HotPink;
+            Back_Ground_Slot21.Controls.Add(Slot21);
+            Back_Ground_Slot21.Location = new Point(389, 157);
+            Back_Ground_Slot21.Name = "Back_Ground_Slot21";
+            Back_Ground_Slot21.Size = new Size(55, 55);
+            Back_Ground_Slot21.TabIndex = 4;
+            // 
+            // Slot21
+            // 
+            Slot21.BackColor = Color.FromArgb(30, 30, 30);
+            Slot21.BorderStyle = BorderStyle.FixedSingle;
+            Slot21.Location = new Point(2, 2);
+            Slot21.Name = "Slot21";
+            Slot21.Size = new Size(51, 51);
+            Slot21.TabIndex = 1;
             // 
             // Inventory_Panel
             // 
@@ -750,6 +857,7 @@
             Vampire_II.TabIndex = 32;
             Vampire_II.Text = "VMP II";
             Vampire_II.UseVisualStyleBackColor = false;
+            Vampire_II.Click += Vampire_II_Click;
             // 
             // label5
             // 
@@ -905,6 +1013,60 @@
             Settings_Button.UseVisualStyleBackColor = false;
             Settings_Button.Click += Settings_Button_Click;
             // 
+            // Label_Amount2
+            // 
+            Label_Amount2.AutoSize = true;
+            Label_Amount2.Location = new Point(35, 35);
+            Label_Amount2.Name = "Label_Amount2";
+            Label_Amount2.Size = new Size(18, 15);
+            Label_Amount2.TabIndex = 2;
+            Label_Amount2.Text = "W";
+            // 
+            // Label_Amount3
+            // 
+            Label_Amount3.AutoSize = true;
+            Label_Amount3.Location = new Point(35, 35);
+            Label_Amount3.Name = "Label_Amount3";
+            Label_Amount3.Size = new Size(18, 15);
+            Label_Amount3.TabIndex = 3;
+            Label_Amount3.Text = "W";
+            // 
+            // Label_Amount4
+            // 
+            Label_Amount4.AutoSize = true;
+            Label_Amount4.Location = new Point(35, 35);
+            Label_Amount4.Name = "Label_Amount4";
+            Label_Amount4.Size = new Size(18, 15);
+            Label_Amount4.TabIndex = 4;
+            Label_Amount4.Text = "W";
+            // 
+            // Label_Amount5
+            // 
+            Label_Amount5.AutoSize = true;
+            Label_Amount5.Location = new Point(35, 35);
+            Label_Amount5.Name = "Label_Amount5";
+            Label_Amount5.Size = new Size(18, 15);
+            Label_Amount5.TabIndex = 11;
+            Label_Amount5.Text = "W";
+            // 
+            // Label_Amount6
+            // 
+            Label_Amount6.AutoSize = true;
+            Label_Amount6.Location = new Point(35, 35);
+            Label_Amount6.Name = "Label_Amount6";
+            Label_Amount6.Size = new Size(18, 15);
+            Label_Amount6.TabIndex = 5;
+            Label_Amount6.Text = "W";
+            // 
+            // Label_Amount7
+            // 
+            Label_Amount7.AutoSize = true;
+            Label_Amount7.Location = new Point(35, 35);
+            Label_Amount7.Name = "Label_Amount7";
+            Label_Amount7.Size = new Size(18, 15);
+            Label_Amount7.TabIndex = 6;
+            Label_Amount7.Text = "W";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 15F);
@@ -912,8 +1074,8 @@
             BackColor = Color.FromArgb(30, 30, 30);
             ClientSize = new Size(577, 609);
             Controls.Add(Settings_Button);
-            Controls.Add(skills_Panel);
             Controls.Add(Inventory_Panel);
+            Controls.Add(skills_Panel);
             Controls.Add(New_Game_Button);
             Controls.Add(Save_Button);
             Controls.Add(Invetory_Button);
@@ -934,27 +1096,41 @@
             Text = "Game";
             background_console.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            panel31.ResumeLayout(false);
-            panel17.ResumeLayout(false);
-            panel33.ResumeLayout(false);
-            Slot7.ResumeLayout(false);
-            panel35.ResumeLayout(false);
-            panel19.ResumeLayout(false);
-            panel37.ResumeLayout(false);
-            panel39.ResumeLayout(false);
-            Slot6.ResumeLayout(false);
-            panel41.ResumeLayout(false);
-            panel21.ResumeLayout(false);
-            panel43.ResumeLayout(false);
-            Slot5.ResumeLayout(false);
-            panel23.ResumeLayout(false);
-            Slot4.ResumeLayout(false);
-            panel25.ResumeLayout(false);
-            Slot3.ResumeLayout(false);
-            panel27.ResumeLayout(false);
-            Slot2.ResumeLayout(false);
-            panel29.ResumeLayout(false);
+            Back_Ground_Slot1.ResumeLayout(false);
             Slot1.ResumeLayout(false);
+            Slot1.PerformLayout();
+            Back_Ground_Slot2.ResumeLayout(false);
+            Slot2.ResumeLayout(false);
+            Slot2.PerformLayout();
+            Back_Ground_Slot3.ResumeLayout(false);
+            Slot3.ResumeLayout(false);
+            Slot3.PerformLayout();
+            Back_Ground_Slot4.ResumeLayout(false);
+            Slot4.ResumeLayout(false);
+            Slot4.PerformLayout();
+            Back_Ground_Slot5.ResumeLayout(false);
+            Slot5.ResumeLayout(false);
+            Slot5.PerformLayout();
+            Back_Ground_Slot6.ResumeLayout(false);
+            Slot6.ResumeLayout(false);
+            Slot6.PerformLayout();
+            Back_Ground_Slot7.ResumeLayout(false);
+            Slot7.ResumeLayout(false);
+            Slot7.PerformLayout();
+            Back_Ground_Slot8.ResumeLayout(false);
+            Back_Ground_Slot9.ResumeLayout(false);
+            Back_Ground_Slot10.ResumeLayout(false);
+            Back_Ground_Slot11.ResumeLayout(false);
+            Back_Ground_Slot12.ResumeLayout(false);
+            Back_Ground_Slot13.ResumeLayout(false);
+            Back_Ground_Slot14.ResumeLayout(false);
+            Back_Ground_Slot15.ResumeLayout(false);
+            Back_Ground_Slot16.ResumeLayout(false);
+            Back_Ground_Slot17.ResumeLayout(false);
+            Back_Ground_Slot18.ResumeLayout(false);
+            Back_Ground_Slot19.ResumeLayout(false);
+            Back_Ground_Slot20.ResumeLayout(false);
+            Back_Ground_Slot21.ResumeLayout(false);
             Inventory_Panel.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -982,48 +1158,48 @@
         private Button Invetory_Button;
         private ToolTip tool_Tip_AttackI;
         private Panel panel3;
-        private Panel panel31;
-        private Panel panel32;
-        private Panel panel17;
-        private Panel panel18;
-        private Panel panel33;
-        private Panel panel34;
+        private Panel Back_Ground_Slot21;
+        private Panel Slot21;
+        private Panel Back_Ground_Slot14;
+        private Panel Slot14;
+        private Panel Back_Ground_Slot20;
+        private Panel Slot20;
+        private Panel Back_Ground_Slot7;
         private Panel Slot7;
-        private Panel panel16;
-        private Panel panel35;
-        private Panel panel36;
-        private Panel panel19;
-        private Panel panel20;
-        private Panel panel37;
-        private Panel panel38;
-        private Panel panel39;
-        private Panel panel40;
+        private Panel Back_Ground_Slot19;
+        private Panel Slot19;
+        private Panel Back_Ground_Slot13;
+        private Panel Slot13;
+        private Panel Back_Ground_Slot18;
+        private Panel Slot18;
+        private Panel Back_Ground_Slot17;
+        private Panel Slot17;
+        private Panel Back_Ground_Slot6;
         private Panel Slot6;
-        private Panel panel14;
-        private Panel panel41;
-        private Panel panel42;
-        private Panel panel21;
-        private Panel panel22;
-        private Panel panel43;
-        private Panel panel44;
+        private Panel Back_Ground_Slot16;
+        private Panel Slot16;
+        private Panel Back_Ground_Slot12;
+        private Panel Slot12;
+        private Panel Back_Ground_Slot15;
+        private Panel Slot15;
+        private Panel Back_Ground_Slot5;
         private Panel Slot5;
-        private Panel panel12;
-        private Panel panel23;
-        private Panel panel24;
+        private Panel Back_Ground_Slot11;
+        private Panel Slot11;
+        private Panel Back_Ground_Slot4;
         private Panel Slot4;
-        private Panel panel10;
-        private Panel panel25;
-        private Panel panel26;
+        private Panel Back_Ground_Slot10;
+        private Panel Slot10;
+        private Panel Back_Ground_Slot3;
         private Panel Slot3;
-        private Panel panel8;
-        private Panel panel27;
-        private Panel panel28;
+        private Panel Back_Ground_Slot9;
+        private Panel Slot9;
+        private Panel Back_Ground_Slot2;
         private Panel Slot2;
-        private Panel panel6;
-        private Panel panel29;
-        private Panel panel30;
+        private Panel Back_Ground_Slot8;
+        private Panel Slot8;
+        private Panel Back_Ground_Slot1;
         private Panel Slot1;
-        private Panel panel4;
         private Panel Inventory_Panel;
         private Panel panel1;
         private Label label6;
@@ -1042,5 +1218,19 @@
         private Button AttackUp_I;
         private Panel skills_Panel;
         private Button Settings_Button;
+        private Label Label_Slot1;
+        private Label Label_Slot2;
+        private Label Label_Slot3;
+        private Label Label_Slot4;
+        private Label Label_Slot5;
+        private Label Label_Slot6;
+        private Label Label_Slot7;
+        private Label Label_Amount1;
+        private Label Label_Amount2;
+        private Label Label_Amount3;
+        private Label Label_Amount4;
+        private Label Label_Amount5;
+        private Label Label_Amount6;
+        private Label Label_Amount7;
     }
 }

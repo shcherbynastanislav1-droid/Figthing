@@ -3,14 +3,15 @@ namespace OOP_Fight_GUI;
 
 public class Skill
 {
+    private int id;
 	private string name;
     private string description;
     public Action<Player> Effect {get; set;}
     private int skillPointCost;
-    private bool isLearnd = false;
 
-    public Skill(string name, string description, int skillPointCost)
+    public Skill(int id, string name, string description, int skillPointCost)
     {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.skillPointCost = skillPointCost;
@@ -48,17 +49,12 @@ public class Skill
             this.skillPointCost = value;
         }
     }
-    public bool IsLearnd
+    public int Id
     {
         get
         {
-            return this.isLearnd;
-        }
-        set
-        {
-            this.isLearnd = value;
+            return this.id;
         }
     }
-    
-    
+
 }
